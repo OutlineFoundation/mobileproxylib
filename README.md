@@ -1,18 +1,6 @@
 # Outline SDK Mobileproxy
 
-This repository provides pre-compiled binaries of the Outline SDK Mobileproxy for Android and iOS. See the [Outline SDK](https://github.com/Jigsaw-Code/outline-sdk) for the library's source code.
-
-## Release Process
-
-To create a new release, you must run a manual GitHub Action. Follow these steps:
-
-1.  Navigate to the **Actions** tab.
-2.  Select the **Draft Mobileproxy Release** workflow.
-3.  Click on the **Run workflow** dropdown.
-4.  Enter the **Outline Experimental SDK tag** you want to base the release on (e.g., `x/v*.*.*`).
-5.  Click the **Run workflow** button. This will trigger a new workflow run that builds the mobileproxy artifacts, updates the `Package.swift` and `build.gradle.kts` files, and creates a new draft release with the generated binaries.
-6.  Update the draft release notes and verify that the library works manually.
-7.  Publish the release!
+This repository provides pre-compiled binaries of the Outline SDK Mobileproxy for Android and iOS. See the [Outline SDK](https://github.com/Jigsaw-Code/outline-sdk/tree/main/x/mobileproxy) for the library's source code.
 
 ## Integration
 
@@ -43,6 +31,10 @@ You can add the Mobileproxy to your Xcode project using Swift Package Manager.
 1.  In Xcode, go to **File > Add Package Dependencies...**
 2.  Enter the package repository URL: `https://github.com/jigsaw-code/outline-sdk-mobileproxy`
 3.  Select the desired version.
+
+## Releasing
+
+For release instructions, see the [./RELEASING.md](./RELEASING.md) file.
 
 ## License
 
