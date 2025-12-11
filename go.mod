@@ -1,3 +1,3 @@
-module github.com/Jigsaw-Code/outline-sdk-mobileproxy
+module localhost
 
 go 1.21
