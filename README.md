@@ -11,19 +11,20 @@ This repository provides pre-compiled binaries of the Outline SDK Mobileproxy li
 
 We use JitPack to distribute the Android library. To integrate it into your app, follow these steps:
 
-1.  Add the JitPack repository to your root `build.gradle` file:
+1.  Add it in your root `settings.gradle` at the end of repositories:
     ```groovy
-    allprojects {
-        repositories {
-            ...
-            maven { url 'https://jitpack.io' }
-        }
-    }
+	dependencyResolutionManagement {
+		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+		repositories {
+			mavenCentral()
+			maven { url 'https://jitpack.io' }
+		}
+	}
     ```
 2.  Add the dependency to your app's `build.gradle` file:
     ```groovy
     dependencies {
-        implementation 'com.github.outlinefoundation:mobileproxylib:<version>'
+        implementation 'com.github.OutlineFoundation:mobileproxylib:<version>'
     }
     ```
 
