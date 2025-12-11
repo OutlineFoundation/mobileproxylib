@@ -3,7 +3,7 @@
 This repository provides pre-compiled binaries of the Outline SDK Mobileproxy library for Android and iOS. See the [Outline SDK](https://github.com/Jigsaw-Code/outline-sdk/tree/main/x/mobileproxy) for the library's source code.
 
 > [!WARNING] 
-> The github repository has moved to `OutlineFoundation`. This shouldn't break existing users with pinned versions, but you will need to update the dependency location to upgrade to the latest version.
+> The github repository has moved to `OutlineFoundation/mobileproxylib`. This shouldn't break existing users with pinned versions, but you will need to update the dependency location to upgrade to the latest version.
 
 ## Integration
 
